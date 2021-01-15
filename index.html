@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <video id="vi" autoplay>
+        </video>
+        <script>
+            navigator.mediaDevices.getUserMedia({
+                video:true
+            })
+            .then(stream=>{
+                document.getElementById("vi").srcObject=stream;
+            })
+            </script>
+    </body>
+</html>
